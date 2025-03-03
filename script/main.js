@@ -137,12 +137,16 @@ document.getElementById('discover-btn').addEventListener('click',function(){
 // theme btn 
 document.getElementById('color-theme').addEventListener('click',function(){
 
-    const colorPlate = ["red","green","blue","yellow","Orange"];
-    const len = colorPlate.length;
+    
     const body = document.getElementById('body');
-    const rand = Math.floor(Math.random().colorPlate);
+    const x = Math.floor(Math.random()*256)
+    const y = Math.floor(Math.random()*256)
+    const z = Math.floor(Math.random()*256)
+    const bgColor = "rgb("+x+","+y+","+z+")";
+    body.style.backgroundColor = bgColor;
+    
 
-    console.log(rand);
+   
 })
 
 
