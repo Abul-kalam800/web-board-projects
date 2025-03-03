@@ -23,4 +23,27 @@ function btnStyle(id, button) {
 
 }
 
+function scoreAndTask (){
+    const task = document.getElementById('task').innerText;
+    const convatedTask = parseInt(task);
+    const score = document.getElementById('score').innerText;
+    const scoreConvated =parseInt(score);
+    document.getElementById('score').innerText= scoreConvated+1;
+   if(convatedTask >0){
+       let taskDone = convatedTask-1;
+       document.getElementById('task').innerText =taskDone;   
+   }
+
+
+}
+
+function successfullyUpdated(){
+
+    const task = document.getElementById('task').innerText;
+    const convatedTask = parseInt(task);
+    if(convatedTask === 0){
+        alert("You have successfully board updated");
+    }
+}
+
 
