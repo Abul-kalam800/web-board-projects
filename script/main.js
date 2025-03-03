@@ -131,7 +131,7 @@ date.innerText = `${nameDay}, ${nameMonth} ${getdate} ${year}`
 // discover page here 
 
 document.getElementById('discover-btn').addEventListener('click',function(){
- window.location.href = "/discove.html";
+ window.location.href = "../html/index.html";
 })
 
 
