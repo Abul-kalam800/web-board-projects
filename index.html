@@ -10,9 +10,9 @@
 </head>
 
 <body class="bg-[#f4f7ff]">
-    <section class="max-w-screen-xl mx-auto bg-white my-5 rounded-md">
+    <section class="max-w-screen-xl mx-auto bg-white my-2 rounded-md">
         <header>
-            <nav class="flex justify-between p-3 items-center">
+            <nav class="flex justify-between p-2 items-center">
                 <div class="flex gap-3">
                     <img class="w-1/4" src="assets/logo.png" alt="">
                     <h1 class="text-3xl font-normal ">Dev <span class="font-bold">Board</span></h1>
@@ -29,10 +29,12 @@
         </header>
     </section>
     <!-- main-box section  -->
-    <section class="max-w-screen-xl mx-auto mt-7">
+    <section class="max-w-screen-xl mx-auto mt-3">
      
        <div class=" flex gap-4 ">
-        <div class="div-left w-9/12 bg-white rounded-xl p-5">
+        <div class="div-left w-9/12 bg-white rounded-xl p-2">
+           <!-- task heading and discover btn starst here   -->
+
             <div class="tast-manu flex justify-between items-center">
                 <div class="w-1/4 ">
                     <div class="bg-slate-100 flex gap-5 p-4 rounded-xl">
@@ -51,11 +53,12 @@
                 </div>
                 <div class="flex justify-between gap-3 items-center bg-slate-100 rounded-2xl p-5">
                    <div> <img src="assets/calender.png" alt=""></div>
-                    <h2 class="font-bold">Wed,<br>Julai 28 2025</h2>
+                    <h2 class="font-bold"><span id="date"></span></h2>
                 </div>
             </div>
+
             <!-- card starts here      -->
-             <div class="grid grid-cols-3 gap-6 my-8">
+             <div class="grid grid-cols-3 gap-6 my-4">
 
                 <div class="card bg-slate-100 p-5 rounded-xl">
                     <p class="p-2 rounded-sm bg-white inline-block">ShopEase</p>
@@ -138,12 +141,16 @@
              </div>
         
         </div>
+
+        <!-- activity log section starts  -->
+
         <div class="div-right w-1/4 bg-white rounded-xl p-5"> 
           <div class="flex justify-center items-center gap-6 pt-2">
             <img src="assets/activity.png" alt="activity"> 
             <span class="font-2xl font-bold">Activity Log</span>
           </div>
-          <button class="text-bold bg-blue-400 text-white px-4 py-2 rounded-md mx-auto mt-4 block">Clear history</button>
+
+          <button id="clear-btn" class="text-bold bg-blue-400 text-white px-4 py-2 rounded-md mx-auto mt-4 block">Clear history</button>
           <!-- add content after button click  -->
            <div  id="container-task" class="container-box">
            
