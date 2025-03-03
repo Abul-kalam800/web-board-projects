@@ -9,16 +9,13 @@ function btnStyle(id, button) {
     let  d = new Date();
     let n = d.toLocaleTimeString();
 
-  
     const p = document.createElement('p');
     p.style.padding = "10px";
     p.style.backgroundColor = "#f7f7f7";
     p.style.marginTop = "14px";
-  
-    
-    p.innerText = `You have completed task  ${title} at ${n}`;
-    
-       
+   
+    p.innerText = `You have completed task  ${title} at ${n}`;  
+
     container.appendChild(p);
     btn.style.opacity = "0.4";
     btn.disabled = true;
