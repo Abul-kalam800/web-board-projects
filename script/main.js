@@ -131,7 +131,18 @@ date.innerText = `${nameDay}, ${nameMonth} ${getdate} ${year}`
 // discover page here 
 
 document.getElementById('discover-btn').addEventListener('click',function(){
- window.location.href = "../discover_index.html";
+ window.location.href = "discover_index.html";
+})
+
+// theme btn 
+document.getElementById('color-theme').addEventListener('click',function(){
+
+    const colorPlate = ["red","green","blue","yellow","Orange"];
+    const len = colorPlate.length;
+    const body = document.getElementById('body');
+    const rand = Math.floor(Math.random().colorPlate);
+
+    console.log(rand);
 })
 
 
